@@ -9,7 +9,7 @@ namespace Phoneword
 
 		public MainPage()
 		{
-			InitializeComponent();
+			InitializeComponent();						
 		}
 
 		void OnTranslate(object sender, EventArgs e)
@@ -39,6 +39,12 @@ namespace Phoneword
 				if (dialer != null)
 					dialer.Dial(translatedNumber);
 			}
+		}
+
+		async void OnAboutClicked(object sender, EventArgs args)
+		{
+			await Navigation.PushAsync(new AboutPage());
+			//Navigation.push
 		}
 	}
 }

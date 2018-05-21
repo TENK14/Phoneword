@@ -14,4 +14,5 @@
         <Button x:Name="translateButon" Text="Translate" Clicked="OnTranslate" />
         <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
     </StackLayout>
+    <Button x:Name="AboutButton" Text="About" IsEnabled="True" Clicked="OnAboutClicked" />
 </ContentPage>
